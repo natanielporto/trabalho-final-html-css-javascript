@@ -1,0 +1,31 @@
+.mainForm {
+  max-width: 350px;
+}
+
+.align-center {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.ajustPhoto {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+}
+
+.trash:hover {
+  cursor: pointer;
+}
+
+ul {
+  max-width: 1100;
+}
+
+ul li:nth-child(odd) {
+  background-color: gray;
+}
+
+ul li:nth-child(even) {
+  background-color: turquoise;
+}

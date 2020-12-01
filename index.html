@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/superhero/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Coleção de Fotos</title>
+  </head>
+  <body>
+    <div class="d-flex flex-column align-items-center m-5">
+      <h1><i class="fas fa-camera-retro mr-3"></i>Meu álbum virtual</h1>
+      <h2>A minha coleção de fotos legais da internet</h2>
+    </div>
+
+    <div class="mainForm m-auto">
+      <form class="align-center d-flex flex-column" id="formAdd">
+        <label class="font-weight-bold">Adicionar foto legal:</label>
+        <input
+          class="form-control mb-3"
+          type="text"
+          id="urlPhoto"
+          placeholder="cole aqui a url da foto"
+          autofocus
+        />
+      </form>
+      <div class="d-flex justify-content-around">
+        <button class="btn btn-success" id="btnSave">Salvar coleção</button>
+        <button class="btn btn-danger" id="btnDelete">Apagar coleção</button>
+      </div>
+    </div>
+    <ul class="row justify-content-around mt-3" id="photoList"></ul>
+    <script src="index.js"></script>
+  </body>
+</html>
